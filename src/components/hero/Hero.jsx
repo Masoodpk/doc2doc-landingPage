@@ -17,10 +17,10 @@ const Hero = () => {
     <section className="bg-white pt-24 px-4 m-10">
       {/* Top Section */}
       <div className="text-center mb-10">
-       <h1 className="text-4xl md:text-5xl font-bold leading-tight flex flex-wrap justify-center items-center gap-2 text-center">
+       <h1 className="text-[24px] md:text-5xl font-bold leading-tight flex flex-wrap justify-center items-center gap-2 text-center">
   വിദേശത്തു  
   <span className="inline-flex items-center ">
-    <span className="text-red-600 text-[80px] leading-none mb-6">MBBS</span>
+    <span className=" bg-gradient-to-r from-[#69378F] to-[#BA315A] bg-clip-text text-transparent text-[80px] leading-none mb-6">MBBS</span>
     <img src={Herologo} alt="logo" className="w-[100px] h-[49px] object-contain" />
   </span>
   പഠിക്കാൻ അറിഞ്ഞിരിക്കേണ്ടതെല്ലാം.

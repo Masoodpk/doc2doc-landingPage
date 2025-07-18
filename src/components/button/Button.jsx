@@ -1,8 +1,7 @@
-
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
-export default function Button({ className = '' }) {
+export default function Button({ className = '', label = 'Contact Us' }) {
   return (
     <button
       className={`
@@ -14,7 +13,7 @@ export default function Button({ className = '' }) {
         ${className}
       `}
     >
-      <span>Contact Us</span>
+      <span>{label}</span>
       <div className="flex items-center justify-center w-10 h-10 bg-white rounded-full shadow-sm mr-1">
         <ArrowRight />
       </div>
