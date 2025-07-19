@@ -1,16 +1,8 @@
  import React from "react";
 import { ArrowRight } from "lucide-react";
 import Herologo from "/src/assets/images/Hero-logo.png"; 
+import SwiperFlags from "/src/components/swiper/SwiperFlags.jsx";
 
-const countries = [
-  "/flags/uzbekistan.png",
-  "/flags/georgia.png",
-  "/flags/tajikistan.png",
-  "/flags/usa.png",
-  "/flags/australia.png",
-  "/flags/canada.png",
-  "/flags/uae.png",
-];
 
 const Hero = () => {
   return (
@@ -29,12 +21,12 @@ const Hero = () => {
          ലോകമെമ്പാടുമുള്ള MBBS യൂണിവേഴ്സിറ്റികളെ കുറിച്ചറിയാം. നിങ്ങളുടെ NEET റിസൽറ്റിലൂടെ നിങ്ങൾക്ക് അന്യോജ്യമായ <br /> രാജ്യം തിരഞ്ഞെടുക്കാം.
         </p>
         <p className="text-[#A2336A] text-lg font-medium mt-2">
-          #south India's most trusted MBBS abroad brand
+          #South India's Most Trusted MBBS Abroad Brand
         </p>
 
-      <button className="mt-6 bg-[#F2B94A] text-[#511B4D] font-normal px-6 py-2 rounded-full hover:bg-[#f0b92c]  cursor-pointer flex items-center justify-between  mx-auto">
+      <button className="mt-6 bg-[#F2B94A] text-[#511B4D] font-normal w-[205] h-[50px] rounded-full hover:bg-[#f0b92c]  cursor-pointer text-[16px] px-8  flex items-center justify-between gap-1  mx-auto">
   Know More
-  <div className="ml-2 h-4 w-4 flex items-center justify-center rounded-full border-1 border-[#511B4D]">
+  <div className="ml-2 h-5 w-5 flex items-center justify-center rounded-full border-1 border-[#511B4D]">
     <ArrowRight className="h-3 w-3" />
   </div>
 </button>
@@ -42,45 +34,39 @@ const Hero = () => {
       </div>
 
       {/* Bottom Section */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-        {/* Left: Flags slider */}
-        <div className="bg-[#f5f6f9] rounded-xl p-4 overflow-hidden relative">
-          <h2 className="text-lg font-semibold mb-1">Top Countries</h2>
-          <p className="text-gray-500 text-sm mb-4">Our Spread Across The World</p>
+   <div className="max-w-8xl px-[8px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+  {/* Left: SwiperFlags - 8 columns on md+ */}
+  <div className="col-span-12 md:col-span-8">
+    <SwiperFlags />
+  </div>
 
-          <div className="flex gap-4 animate-scroll whitespace-nowrap">
-            {countries.map((flag, index) => (
-              <img
-                key={index}
-                src={flag}
-                alt="flag"
-                className="h-8 w-auto object-contain"
-              />
-            ))}
-          </div>
-        </div>
-
-        {/* Right: Video thumbnail */}
-        <div className="relative">
-          <img
-            src="/video-thumbnail.jpg"
-            alt="Video"
-            className="rounded-xl shadow-md"
+  {/* Right: Video thumbnail - 4 columns on md+ */}
+     <div className="col-span-12 md:col-span-4">
+        <div className="relative rounded-xl overflow-hidden shadow-lg">
+          <div className="absolute inset-0 flex items-center justify-center z-10">
+  <div className="bg-white bg-opacity-60 rounded-full p-3 shadow-md">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="h-6 w-6 text-black"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+    >
+      <path d="M6 4l10 6-10 6V4z" />
+    </svg>
+  </div>
+</div>
+          <video
+            src="/src/assets/video/videoplayback.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-[278px] object-cover rounded-xl"
           />
-          <button className="absolute inset-0 flex items-center justify-center">
-            <div className="bg-white rounded-full p-3 shadow-lg">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-black"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path d="M6 4l10 6-10 6V4z" />
-              </svg>
-            </div>
-          </button>
         </div>
       </div>
+</div>
+
     </section>
   );
 };
