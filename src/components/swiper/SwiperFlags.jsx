@@ -1,6 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, FreeMode } from "swiper/modules";
+import { useRef, useEffect } from "react";
 import "swiper/css";
 import 'swiper/css/autoplay';
 
@@ -17,8 +18,11 @@ const flags = [
   { src: "src/assets/images/flag-10.png" },
   { src: "src/assets/images/flag-11.png" },
 ];
+const duplicateFlags = [...flags, ...flags]; // Duplicate for continuous effect
 
 const SwiperFlags = () => {
+
+  
   return (
     <section className="relative bg-[#E6E0EC] py-7  rounded-2xl overflow-hidden">
       <div className="max-w-[1224px] mx-auto px-6 ">
@@ -40,28 +44,37 @@ const SwiperFlags = () => {
 
         {/* Swiper */}
         <Swiper
-          modules={[Autoplay]}
+            
+          modules={[Autoplay ]}
           className="!pl-6" // slight left padding to align with text
           // slidesPerView={5}
           spaceBetween={45}
           loop={true}
+          loopedslides={flags.length} 
+           loopAdditionalSlides={2} 
           speed={3000}
           allowTouchMove={false}
+          
           autoplay={{
             delay: 1,
             disableOnInteraction: false,
             pauseOnMouseEnter: false,
             reverseDirection: false,
+            //  waitForTransition: false,
           }}
+        
    
           breakpoints={{
             320: { slidesPerView: 2.5 },
             640: { slidesPerView: 3.5 },
             768: { slidesPerView: 4.5 },
-            1024: { slidesPerView: 7.5 },
+            1024: { slidesPerView: 7.5 ,
+              
+              
+            },
           }}
         >
-          {flags.map((flag, index) => (
+          {duplicateFlags.map((flag, index) => (
             <SwiperSlide key={index} className="!w-auto flex justify-center">
               <img
                 src={flag.src}

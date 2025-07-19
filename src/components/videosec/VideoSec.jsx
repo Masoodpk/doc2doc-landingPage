@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "/src/components/button/Button.jsx";
+import playIcon from "../../assets/images/play-icon.png";
+import youtubeIcon from "../../assets/images/youtube.svg";
+import PopUp from "/src/components/popup/PopUp.jsx";
 
 const videosec = () => {
+   const [popUp , setPopUp] = useState(false);
+
+  const popUpForm = (e) => {
+    alert("pop up form opened");
+    setPopUp(true);
+    console.log(e.target);
+  }
   return (
     <section className="bg-global-6 py-12 sm:py-16 md:py-20">
       <div className="w-full  mx-auto px-4 sm:px-2 lg:px-8">
@@ -16,20 +26,27 @@ const videosec = () => {
         </div>
 
         {/* Video Section */}
-        <div className="bg-global-1 rounded-[22px] p-8 sm:p-12 md:p-16 lg:p-20 mb-8 sm:mb-12 max-w-4xl mx-auto">
-          <div className="flex justify-center items-center">
-            <button className="bg-red-600 hover:bg-red-700 transition-colors duration-200 rounded-full p-4 sm:p-6">
+        <div className="video-bg-wrapper w-full ">
+        <div className="bg-global-1 bg-black rounded-[23px] md:py-[156px] max-h-[375px]         max-w-[808px]  mx-auto">
+          <div className="flex justify-center ">
+            <button className="cursor-pointer " onClick={popUpForm}>
               <img 
-                src="/images/img_youtube.svg" 
+                src={youtubeIcon} 
                 alt="Play Video" 
-                className="w-12 sm:w-16 md:w-20 h-auto"
+                className="w-auto h-auto  "
               />
             </button>
           </div>
         </div>
 
+
+        </div>
+        {/* pop Up Area */}
+        { popUp ? <PopUp setPopUp={setPopUp} /> : null }
+       
+
         {/* CTA Button */}
-        <div className="text-center">
+        <div className="text-center pt-[30px]">
        <Button label="Know More" />
         </div>
       </div>
