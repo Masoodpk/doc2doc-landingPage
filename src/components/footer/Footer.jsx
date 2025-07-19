@@ -5,22 +5,24 @@ import Whatsapp from "/src/assets/images/whatsapp.png";
 import Instagram from "/src/assets/images/instagram.png";
 const Footer = () => {
   return (
-    <section className="bg-[#E9E3ED] py-16 px-[64px] relative overflow-hidden">
+    <section className="bg-[#E9E3ED] md:py-16 px-[16px] md:px-[64px] relative overflow-hidden">
       {/* Main Content Card */}
-      <div className="mx-auto px-[30px] md:px-[52px] py-[30px] md:py-[68px] bg-[#511B4D] rounded-3xl shadow-sm flex flex-col gap-12 relative text-white ">
+
+      
+      <div className="mx-auto px-[20px] md:px-[52px] py-[20px] md:py-[68px] bg-[#511B4D] rounded-3xl shadow-sm flex flex-col gap-12 relative text-white ">
         
         {/* Header Section */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 lg:gap-8">
           <div className="w-full lg:w-2/3">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-anek-malayalam font-medium text-white mb-4 sm:mb-6 leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center md:text-left font-medium text-white mb-4 sm:mb-6 leading-tight">
               Let&apos;s Build Future Doctors
             </h2>
-            <p className="text-sm sm:text-base text-[#E9E3ED] leading-relaxed max-w-4xl">
+            <p className="text-sm sm:text-base text-[#E9E3ED] text-center md:text-left leading-relaxed max-w-4xl">
               We are committed to guiding aspiring medical students through every step of their MBBS journey abroad—from eligibility checks and university selection to scholarships and NEET preparation. With expert support and global partnerships, we ensure your path to becoming a doctor is clear, confident, and well-supported.
             </p>
           </div>
 
-          <div className="w-full lg:w-auto">
+          <div className="w-full text-center md:text-left lg:w-auto">
             <Button />
           </div>
         </div>
@@ -66,6 +68,7 @@ const Footer = () => {
                   alt="WhatsApp"
                   className="w-[24px] sm:w-[30px] h-[24px] sm:h-[32px] cursor-pointer hover:opacity-80 transition-opacity"
                 />
+
                 <img
                   src={Instagram}
                   alt="Instagram"
