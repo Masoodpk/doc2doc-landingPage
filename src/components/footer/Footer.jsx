@@ -36,7 +36,7 @@ const Footer = () => {
             <img
               src={Footerlogo}
               alt="Doc2Doc Logo"
-              className="w-full h-auto"
+              className="min-w-[140px] flex"
             />
           </div>
 
