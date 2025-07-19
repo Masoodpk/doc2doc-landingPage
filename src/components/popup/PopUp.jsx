@@ -5,9 +5,9 @@ import doc2doc from "../../assets/images/doc2doc-logo.svg";
 function PopUp({ setPopUp }) {
   return (
     <div className="fixed inset-0  bg-opacity-50 z-50 flex justify-center items-center align-middle ">
-      <div className="popup-sec flex max-h-[832px] h-full  max-w-[1280px] md:w-full">
+      <div className="popup-sec flex justify-center max-h-[832px] h-full w-full md:max-w-[1280px] md:w-full ">
         {/* left section */}
-        <div className="left-popup max-h-[832px]  max-w-[639px] bg-gradient-to-b from-[#69378F] w-1/2  to-[#BA315A]  h-full relative ">
+        <div className="left-popup w-0 invisible md:visible max-h-[832px]  max-w-[639px] bg-gradient-to-b from-[#69378F] md:w-1/2  to-[#BA315A]  h-full relative ">
           <div className="heading text-white text-center md:pt-[163px] px-[28px] relative z-10">
             <h3 className="font-semibold text-[14px]">
               വിദേശത്തു MBBS പഠിക്കാം{" "}
@@ -52,7 +52,7 @@ function PopUp({ setPopUp }) {
           </div>
         </div>
         {/* right section */}
-        <div className="right-popup w-1/2 bg-white max-h-[832px] h-full pt-[50px] relative ">
+        <div className="right-popup w-full md:w-1/2 bg-white max-h-[832px] h-full pt-[50px] relative ">
           <button
             className="absolute top-4 right-4 text-gray-400  text-3xl font-bold hover:text-gray-600 cursor-pointer"
             onClick={() => setPopUp(false)}
