@@ -10,6 +10,9 @@ function App() {
 
   return (
     <>
+    
+
+   
       <Navbar />
       <Hero />
       <MbbsInfoSection />
@@ -17,7 +20,9 @@ function App() {
       <DirectorSec />
       <Testimonial />
       <Footer />
+      
     </>
+     
   )
 }
 
