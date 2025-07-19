@@ -3,9 +3,11 @@ import { useRef, useEffect } from "react";
 import docter from "../../assets/images/doctor.svg";
 import quteIcon from "../../assets/images/quotes.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay  } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+
+
 
 // Dummy testimonials data
 const testimonials = [
@@ -120,26 +122,30 @@ const TestimonialSection = () => {
           
 
           <div className="w-full max-w-6xl mx-auto px-4 py-10">
-      <Swiper
-        slidesPerView={1}
-        spaceBetween={30}
-         onSwiper={(swiper) => {
-          // link the DOM element manually to pagination
-          if (swiper.params.pagination && typeof swiper.params.pagination === 'object') {
-            swiper.params.pagination.el = paginationRef.current;
-            swiper.pagination.init();
-            swiper.pagination.render();
-            swiper.pagination.update();
-          }
-        }}
-        pagination={{ clickable: true }}
-        modules={[Pagination]}
-        breakpoints={{
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 }
-        }}
-        className="testimonial-swiper "
-      >
+   <Swiper
+  slidesPerView={1}
+  spaceBetween={30}
+  loop={true}
+  autoplay={{
+    delay: 3000,
+    disableOnInteraction: false,
+  }}
+  onSwiper={(swiper) => {
+    if (swiper.params.pagination && typeof swiper.params.pagination === 'object') {
+      swiper.params.pagination.el = paginationRef.current;
+      swiper.pagination.init();
+      swiper.pagination.render();
+      swiper.pagination.update();
+    }
+  }}
+  pagination={{ clickable: true }}
+  modules={[Pagination, Autoplay]}
+  breakpoints={{
+    768: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 }
+  }}
+  className="testimonial-swiper"
+>
         {testimonials.map((item, index) => (
           <SwiperSlide key={index}>
             <div className="card-wraper py-[50px] ">
