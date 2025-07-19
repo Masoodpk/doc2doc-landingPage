@@ -66,4 +66,31 @@
   z-index: -1;
 
 }
+
+/* Regular bullet */
+/* Custom bullet style */
+.testimonial-swiper .swiper-pagination-bullet {
+  width: 32px !important;
+  height: 6px !important;
+  /* bottom: 36px !important; */
+  border-radius: 9999px !important;
+  background-color: #d1d5db !important; /* gray-300 */
+  opacity: 1 !important;
+  margin: 0 6px !important;
+  transition: all 0.3s ease !important;
 }
+
+/* Active bullet style */
+.testimonial-swiper .swiper-pagination-bullet-active {
+  background-color: #000 !important; /* black */
+}
+}
+
+/* .custom-pagination .swiper-pagination-bullet {
+  @apply w-8 h-1.5 rounded-full bg-gray-300 transition-all duration-300;
+}
+
+
+.custom-pagination .swiper-pagination-bullet-active {
+  @apply bg-black w-8 h-1.5;
+} */
