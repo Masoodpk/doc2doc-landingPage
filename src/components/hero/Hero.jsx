@@ -7,6 +7,8 @@ import SwiperFlags from "/src/components/swiper/SwiperFlags.jsx";
 const Hero = () => {
   return (
     <section className="bg-white pt-24 px-4 m-10">
+      <div className="container-custom">
+
       {/* Top Section */}
       <div className="text-center mb-10">
        <h1 className="text-[24px] md:text-5xl font-bold leading-tight flex flex-wrap justify-center items-center gap-2 text-center">
@@ -66,6 +68,11 @@ const Hero = () => {
         </div>
       </div>
 </div>
+
+
+
+      </div>
+      
 
     </section>
   );

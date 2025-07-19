@@ -2,6 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import 'swiper/css/autoplay';
 
 const flags = [
   { src: "src/assets/images/flag-1.png" },
@@ -41,21 +42,23 @@ const SwiperFlags = () => {
         <Swiper
           modules={[Autoplay]}
           className="!pl-6" // slight left padding to align with text
-          slidesPerView={5}
+          // slidesPerView={5}
           spaceBetween={45}
           loop={true}
           speed={3000}
           allowTouchMove={false}
           autoplay={{
-            delay: 0,
+            delay: 1,
             disableOnInteraction: false,
             pauseOnMouseEnter: false,
+            reverseDirection: false,
           }}
+   
           breakpoints={{
-            320: { slidesPerView: 2 },
-            640: { slidesPerView: 3 },
-            768: { slidesPerView: 4 },
-            1024: { slidesPerView: 6 },
+            320: { slidesPerView: 2.5 },
+            640: { slidesPerView: 3.5 },
+            768: { slidesPerView: 4.5 },
+            1024: { slidesPerView: 7.5 },
           }}
         >
           {flags.map((flag, index) => (

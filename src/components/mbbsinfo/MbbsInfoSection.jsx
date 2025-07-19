@@ -6,6 +6,7 @@ import Check from "/src/assets/images/check.png";
 const MbbsInfoSection = () => {
   return (
     <section className="bg-[#E9E3ED] py-16 px-[64px] relative overflow-hidden">
+      <div className="container-custom">
       {/* Main Content Card */}
       <div className="mx-auto px-[30px] md:px-[52px] py-[30px] md:py-[68px] bg-[#F8F7FA] rounded-3xl   shadow-sm flex flex-col md:flex-row items-center gap-8 relative">
         {/* Left Column */}
@@ -47,6 +48,9 @@ const MbbsInfoSection = () => {
           alt="Doctor"
           className="h-[692px] w-[369px] object-cover"
         />
+      </div>
+
+
       </div>
     </section>
   );
