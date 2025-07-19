@@ -8,7 +8,7 @@ const videosec = () => {
    const [popUp , setPopUp] = useState(false);
 
   const popUpForm = (e) => {
-    alert("pop up form opened");
+    
     setPopUp(true);
     console.log(e.target);
   }
@@ -27,8 +27,8 @@ const videosec = () => {
 
         {/* Video Section */}
         <div className="video-bg-wrapper w-full ">
-        <div className="bg-global-1 bg-black rounded-[23px] md:py-[156px] max-h-[375px]         max-w-[808px]  mx-auto">
-          <div className="flex justify-center ">
+        <div className="bg-global-1 bg-black rounded-[23px] md:h-[375px] max-h-[375px]         max-w-[808px]  mx-auto">
+          <div className="flex justify-center h-full items-center">
             <button className="cursor-pointer " onClick={popUpForm}>
               <img 
                 src={youtubeIcon} 
@@ -37,12 +37,23 @@ const videosec = () => {
               />
             </button>
           </div>
+          {/* can do when it change to dynamic */}
+          {/* <iframe
+                className="w-full h-full rounded-[13px]"
+                src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                frameBorder="0"
+                allowFullScreen
+                
+              ></iframe> */}
         </div>
 
 
         </div>
+        <div className="popup">
         {/* pop Up Area */}
         { popUp ? <PopUp setPopUp={setPopUp} /> : null }
+
+        </div>
        
 
         {/* CTA Button */}
