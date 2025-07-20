@@ -16,7 +16,7 @@ const Footer = () => {
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center md:text-left font-medium text-white mb-4 sm:mb-6 leading-tight">
                 Let&apos;s Build Future Doctors
               </h2>
-              <p className="text-sm sm:text-base text-[#E9E3ED] text-center md:text-left leading-relaxed max-w-4xl">
+              <p className="text-sm sm:text-base text-[#E9E3ED] text-center md:text-left leading-relaxed max-w-4xl font-poppins">
                 We are committed to guiding aspiring medical students through every step of their MBBS journey abroad—from eligibility checks and university selection to scholarships and NEET preparation. With expert support and global partnerships, we ensure your path to becoming a doctor is clear, confident, and well-supported.
               </p>
             </div>

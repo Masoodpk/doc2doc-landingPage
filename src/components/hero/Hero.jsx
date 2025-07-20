@@ -19,10 +19,10 @@ const Hero = () => {
   </span>
   പഠിക്കാൻ അറിഞ്ഞിരിക്കേണ്ടതെല്ലാം.
 </h1>
-        <p className="text-[#737373] mt-4 leading-8 text-[14px]">
+        <p className="text-[#737373] mt-4 leading-8 text-[14px] font-anekMalayalam">
          ലോകമെമ്പാടുമുള്ള MBBS യൂണിവേഴ്സിറ്റികളെ കുറിച്ചറിയാം. നിങ്ങളുടെ NEET റിസൽറ്റിലൂടെ നിങ്ങൾക്ക് അന്യോജ്യമായ <br /> രാജ്യം തിരഞ്ഞെടുക്കാം.
         </p>
-        <p className="text-[#A2336A] text-lg font-medium mt-2">
+        <p className="text-[#A2336A] text-lg font-medium mt-2 font-poppins">
           #South India's Most Trusted MBBS Abroad Brand
         </p>
 
