@@ -27,7 +27,7 @@ const videosec = () => {
 
         {/* Video Section */}
         <div className="video-bg-wrapper w-full ">
-        <div className="bg-global-1 bg-black rounded-[23px] md:h-[375px] max-h-[375px]         max-w-[808px]  mx-auto">
+        <div className="bg-global-1 bg-black rounded-[23px] md:h-[375px] max-h-[375px]         max-w-[808px]  mx-auto h-[186px] ">
           <div className="flex justify-center h-full items-center">
             <button className="cursor-pointer " onClick={popUpForm}>
               <img 
