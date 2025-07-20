@@ -126,7 +126,6 @@ const TestimonialSection = () => {
           ))}
         </div> */}
 
-<<<<<<< HEAD
         <div className="w-full max-w-6xl mx-auto px-4 py-10">
           <Swiper
             slidesPerView={1.5}
@@ -153,40 +152,6 @@ const TestimonialSection = () => {
             breakpoints={{
               768: { slidesPerView: 2 },
               1024: { slidesPerView: 3 },
-=======
-          <div className="w-full max-w-6xl mx-auto px-4 py-10">
-   <Swiper
-  slidesPerView={1}
-  spaceBetween={30}
-  loop={true}
-  autoplay={{
-    delay: 3000,
-    disableOnInteraction: false,
-  }}
-  onSwiper={(swiper) => {
-    if (swiper.params.pagination && typeof swiper.params.pagination === 'object') {
-      swiper.params.pagination.el = paginationRef.current;
-      swiper.pagination.init();
-      swiper.pagination.render();
-      swiper.pagination.update();
-    }
-  }}
-  pagination={{ clickable: true }}
-  modules={[Pagination, Autoplay]}
-  breakpoints={{
-    768: { slidesPerView: 2 },
-    1024: { slidesPerView: 3 }
-  }}
-  className="testimonial-swiper"
->
-        {testimonials.map((item, index) => (
-          <SwiperSlide key={index}>
-            <div className="card-wraper py-[50px] ">
-            <div className="bg-[#F5F7FA] rounded-t-[10%] rounded-br-[10%]  flex flex-col justify-between h-full  max-w-[283px] md:w-[283px] max-h-[330px] md:h-[330px]">
-              <div className="top-sec pt-[30px] px-[22px]">
-              <div className="text-4xl text-gray-300 mb-4"><img src={quteIcon} alt="" /></div>
-              <p className="text-[20px] text-gray-800 mb-6 max-w-[237px]">{item.text}</p>
->>>>>>> f1022b2737fb12b28fa3dde114a102c82a761fb3
 
             }}
             className="testimonial-swiper "
