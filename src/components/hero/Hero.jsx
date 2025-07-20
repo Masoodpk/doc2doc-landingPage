@@ -11,7 +11,7 @@ const Hero = () => {
 
       {/* Top Section */}
       <div className="text-center mb-10">
-       <h1 className="text-[24px] md:text-5xl font-bold leading-tight flex flex-wrap justify-center items-center gap-2 text-center">
+       <h1 className="text-[16px] md:text-5xl font-bold leading-tight flex flex-wrap justify-center items-center gap-2 text-center">
   വിദേശത്തു  
   <span className="inline-flex md:items-center ">
     <span className=" bg-gradient-to-r from-[#69378F] to-[#BA315A] bg-clip-text text-transparent text-[44px] md:text-[80px] leading-none mb-6">MBBS</span>
