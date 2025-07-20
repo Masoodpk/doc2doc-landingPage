@@ -6,6 +6,7 @@ import Videosec from "/src/components/videosec/Videosec.jsx"
 import DirectorSec from "/src/components/directorsec/DirectorSec.jsx"
 import Testimonial from "/src/components/testimonial/Testmonial.jsx"
 import Footer from "/src/components/footer/Footer.jsx"
+import CtcButton from './components/ctc-buttons/CtcButton.jsx'
 function App() {
 
   return (
@@ -19,6 +20,7 @@ function App() {
       <Videosec />
       <DirectorSec />
       <Testimonial />
+      <CtcButton/>
       <Footer />
       
     </>
