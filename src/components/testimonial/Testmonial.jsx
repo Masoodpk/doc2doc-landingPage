@@ -126,7 +126,7 @@ const TestimonialSection = () => {
 
         <div className="w-full max-w-6xl mx-auto px-4 py-10">
           <Swiper
-            slidesPerView={1}
+            slidesPerView={1.5}
             spaceBetween={30}
             onSwiper={(swiper) => {
               setTimeout(() => {
@@ -150,6 +150,7 @@ const TestimonialSection = () => {
             breakpoints={{
               768: { slidesPerView: 2 },
               1024: { slidesPerView: 3 },
+
             }}
             className="testimonial-swiper "
           >
