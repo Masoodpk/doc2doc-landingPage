@@ -13,8 +13,8 @@ const Footer = () => {
           {/* Header Section */}
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 lg:gap-8">
             <div className="w-full lg:w-2/3">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center md:text-left font-medium text-white mb-4 sm:mb-6 leading-tight">
-                Let&apos;s Build Future Doctors
+              <h2 className="anek-malayalam text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center md:text-left font-medium text-white mb-4 sm:mb-6 leading-tight">
+                Let's Build Future Doctors
               </h2>
               <p className="text-sm sm:text-base text-[#E9E3ED] text-center md:text-left leading-relaxed max-w-4xl font-poppins">
                 We are committed to guiding aspiring medical students through every step of their MBBS journey abroad—from eligibility checks and university selection to scholarships and NEET preparation. With expert support and global partnerships, we ensure your path to becoming a doctor is clear, confident, and well-supported.
@@ -64,7 +64,7 @@ const Footer = () => {
 
               {/* Contact */}
               <div className="flex flex-col gap-3">
-                <h3 className="text-[24px] md:text-[28px] font-medium text-white">Contact Us</h3>
+                <h3 className="text-[24px] md:text-[28px] font-medium text-white anek-malayalam">Contact Us</h3>
                 <div className="flex flex-col gap-2">
                   <div className="w-[100px] sm:w-[138px] h-[1px] bg-[#E9E3ED] opacity-40"></div>
                   <p className="text-[16px] font-medium text-white">+91 9207 400 300</p>
@@ -73,7 +73,7 @@ const Footer = () => {
 
               {/* Social */}
               <div className="flex flex-col gap-3">
-                <h3 className="text-[24px] md:text-[28px] font-medium text-white">Connect with Us</h3>
+                <h3 className="text-[24px] md:text-[28px] font-medium text-white anek-malayalam">Connect with Us</h3>
                 <div className="flex flex-col gap-3">
                   <div className="w-[200px] h-[1px] bg-[#E9E3ED] opacity-40"></div>
                   <div className="flex gap-8">

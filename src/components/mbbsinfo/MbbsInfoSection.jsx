@@ -12,7 +12,7 @@ const MbbsInfoSection = () => {
           <div className="flex flex-col lg:flex-row  items-center gap-8 ">
             {/* Left Text Content */}
             <div className="w-full pb-[30px] md:pb-[68px]  text-center md:text-left">
-              <h2 className="text-[22px] md:text-[44px] font-bold mb-4 leading-10 md:leading-[56px]">
+              <h2 className="anek-malayalam font-medium text-[22px] md:text-[44px] font-bold mb-4 leading-10 md:leading-[56px]">
                 നിങ്ങളുടെ സമഗ്രമായ <br />
                 <span className="text-[#421b1b]">എംബിബിഎസ് മാർഗ്ഗനിർദ്ദേശം</span>
               </h2>

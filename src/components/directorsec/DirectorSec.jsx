@@ -8,7 +8,7 @@ const DirectorsSection = () => {
       <div className="w-full max-w-[1152px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="text-center mb-8 sm:mb-12">
-          <h2 className="text-[24px] md:text-[60px] lg:text-6xl font-anek-malayalam font-medium bg-gradient-to-r from-[#BA315A] to-[#69378F] bg-clip-text text-transparent mb-4">
+          <h2 className="anek-malayalam text-[24px] md:text-[60px] lg:text-6xl font-anek-malayalam font-medium bg-gradient-to-r from-[#BA315A] to-[#69378F] bg-clip-text text-transparent mb-4">
             Meet our Directors
           </h2>
           <p className="text-sm sm:text-base text-global-5 max-w-4xl mx-auto">

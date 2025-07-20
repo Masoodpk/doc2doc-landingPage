@@ -11,7 +11,7 @@ const Hero = () => {
 
       {/* Top Section */}
       <div className="text-center mb-10">
-       <h1 className="text-[16px] md:text-5xl font-bold leading-tight flex flex-wrap justify-center items-center gap-2 text-center">
+       <h1 className="anek-malayalam font-semibold text-[16px] md:text-5xl  leading-tight flex flex-wrap justify-center items-center gap-2 text-center">
   വിദേശത്തു  
   <span className="inline-flex md:items-center ">
     <span className=" bg-gradient-to-r from-[#69378F] to-[#BA315A] bg-clip-text text-transparent text-[44px] md:text-[80px] leading-none mb-6">MBBS</span>
@@ -19,7 +19,7 @@ const Hero = () => {
   </span>
   പഠിക്കാൻ അറിഞ്ഞിരിക്കേണ്ടതെല്ലാം.
 </h1>
-        <p className="text-[#737373] mt-4 leading-8 text-[14px] font-anekMalayalam">
+        <p className="text-[#737373] mt-4 leading-8 text-[14px] !font-anekMalayalam">
          ലോകമെമ്പാടുമുള്ള MBBS യൂണിവേഴ്സിറ്റികളെ കുറിച്ചറിയാം. നിങ്ങളുടെ NEET റിസൽറ്റിലൂടെ നിങ്ങൾക്ക് അന്യോജ്യമായ <br /> രാജ്യം തിരഞ്ഞെടുക്കാം.
         </p>
         <p className="text-[#A2336A] text-lg font-medium mt-2 font-poppins">

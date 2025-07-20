@@ -74,7 +74,7 @@ const TestimonialSection = () => {
     <section className="bg-global-8 py-12 sm:py-16 md:py-20">
       <div className="w-full max-w-[1152px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 sm:mb-12">
-          <h2 className="text-[24px] md:text-[60px] font-medium bg-gradient-to-r from-[#BA315A] to-[#69378F] bg-clip-text text-transparent mb-4">
+          <h2 className="anek-malayalam text-[24px] md:text-[60px] font-medium bg-gradient-to-r from-[#BA315A] to-[#69378F] bg-clip-text text-transparent mb-4">
             Their Journey, Our Mission
           </h2>
           <p className="text-[16px] text-gray-600  max-w-4xl mx-auto">
@@ -164,7 +164,7 @@ const TestimonialSection = () => {
                       <div className="text-4xl text-gray-300 mb-4">
                         <img src={quteIcon} alt="" />
                       </div>
-                      <p className="text-[20px] text-gray-800 mb-6 max-w-[237px]">
+                      <p className="anek-malayalam text-[20px] text-gray-800 mb-6 max-w-[237px]">
                         {item.text}
                       </p>
                     </div>

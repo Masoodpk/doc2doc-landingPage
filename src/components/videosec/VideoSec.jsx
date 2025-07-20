@@ -17,7 +17,7 @@ const videosec = () => {
       <div className="w-full  mx-auto px-4 sm:px-2 lg:px-8">
         {/* Heading */}
         <div className="text-center mb-8 sm:mb-12"> 
-          <h2 className="text-[24px] md:text-[50px] lg:text-5xl font-anek-malayalam font-medium text-global-2 mb-4 sm:mb-6">
+          <h2 className="anek-malayalam text-[24px] md:text-[50px] lg:text-5xl font-anek-malayalam font-medium text-global-2 mb-4 sm:mb-6">
             ഡോക്ടറായവരിൽ നിന്നും നേരിട്ട് കേട്ടറിയാം.
           </h2>
           <p className="text-[12px] md:text-[14px] px-[20px] md:px-[64px] mx-auto leading-7 text-gray-600">
