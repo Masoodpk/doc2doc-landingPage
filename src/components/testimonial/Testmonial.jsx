@@ -85,105 +85,64 @@ const TestimonialSection = () => {
           </p>
         </div>
 
-        {/* Testimonial Cards */}
-        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-          {testimonials.map((testimonial) => (
-
-            
-            <div
-            
-              key={testimonial.id}
-              className="bg-[url('/images/img_subtract.svg')] bg-cover bg-center p-4 sm:p-6 rounded-lg shadow-md"
-            >
-              <div className="flex flex-col h-full">
-                <div className="mb-6">
-                  <img
-                    src="/images/img_.svg"
-                    alt="Quote"
-                    className="w-[30px] sm:w-[42px] h-[24px] sm:h-[30px] mb-4"
-                  />
-                  <p className="text-base sm:text-lg md:text-xl font-anek-malayalam font-medium text-slider-1 leading-relaxed">
-                    {testimonial.text}
-                  </p>
-                </div>
-                <div className="flex items-center gap-3 mt-auto">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-11 h-11 rounded-full object-cover"
-                  />
-                  <div>
-                    <p className="text-base sm:text-lg font-roboto text-global-3 font-normal">
-                      {testimonial.name}
-                    </p>
-                    <p className="text-sm sm:text-base font-roboto text-global-3 font-semibold">
-                      {testimonial.country}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div> */}
-
         <div className="w-full max-w-6xl mx-auto px-4 py-10">
-          <Swiper
-            slidesPerView={1.5}
-            spaceBetween={30}
-            onSwiper={(swiper) => {
-              setTimeout(() => {
-                swiper.update(); // force re-render
-              }, 100);
-              // link the DOM element manually to pagination
-              if (
-                swiper.params.pagination &&
-                typeof swiper.params.pagination === "object"
-              ) {
-                swiper.params.pagination.el = paginationRef.current;
-                swiper.pagination.init();
-                swiper.pagination.render();
-                swiper.pagination.update();
-              }
-            }}
-            pagination={{ clickable: true }}
-            observer={true}
-            observeParents={true}
-            modules={[Pagination]}
-            breakpoints={{
-              768: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
-
-            }}
-            className="testimonial-swiper "
-          >
-            {testimonials.map((item, index) => (
-              <SwiperSlide key={index}>
-                <div className="card-wraper py-[50px] ">
-                  <div className="bg-[#F5F7FA] rounded-t-[10%] rounded-br-[10%]  flex flex-col justify-between h-full  max-w-[283px] md:w-[283px] max-h-[330px] md:h-[330px]">
-                    <div className="top-sec pt-[30px] px-[22px]">
-                      <div className="text-4xl text-gray-300 mb-4">
-                        <img src={quteIcon} alt="" />
-                      </div>
-                      <p className="anek-malayalam text-[20px] text-gray-800 mb-6 max-w-[237px]">
-                        {item.text}
-                      </p>
-                    </div>
-                    <div className="flex items-center gap-3 mt-auto bg-white w-[70%] py-[20px]  rounded-tr-xl">
-                      <img
-                        src={item.image}
-                        alt={item.name}
-                        className="w-10 h-10 rounded-full object-cover"
-                      />
-                      <div>
-                        <p className="font-semibold text-sm">{item.name}</p>
-                        <p className="text-xs text-gray-500">{item.country}</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+       <Swiper
+  slidesPerView={1} // Only 1 card on mobile by default
+  spaceBetween={30}
+  onSwiper={(swiper) => {
+    setTimeout(() => {
+      swiper.update(); // Force re-render
+    }, 100);
+    // Link the DOM element manually to pagination
+    if (
+      swiper.params.pagination &&
+      typeof swiper.params.pagination === "object"
+    ) {
+      swiper.params.pagination.el = paginationRef.current;
+      swiper.pagination.init();
+      swiper.pagination.render();
+      swiper.pagination.update();
+    }
+  }}
+  pagination={{ clickable: true }}
+  observer={true}
+  observeParents={true}
+  modules={[Pagination, Autoplay]} // Added Autoplay if needed
+  breakpoints={{
+    640: { slidesPerView: 1 }, // 1.5 cards on small tablets (optional)
+    768: { slidesPerView: 2 }, // 2 cards on tablets
+    1024: { slidesPerView: 3 }, // 3 cards on desktops
+  }}
+  className="testimonial-swiper"
+>
+  {testimonials.map((item, index) => (
+    <SwiperSlide key={index}>
+      <div className="card-wraper py-[50px]">
+        <div className="bg-[#F5F7FA] rounded-t-[10%] rounded-br-[10%] flex flex-col justify-between h-full max-w-[283px] md:w-[283px] max-h-[330px] md:h-[330px]">
+          <div className="top-sec pt-[30px] px-[22px]">
+            <div className="text-4xl text-gray-300 mb-4">
+              <img src={quteIcon} alt="" />
+            </div>
+            <p className="anek-malayalam text-[20px] text-gray-800 mb-6 max-w-[237px]">
+              {item.text}
+            </p>
+          </div>
+          <div className="flex items-center gap-3 mt-auto bg-white w-[70%] py-[20px] rounded-tr-xl">
+            <img
+              src={item.image}
+              alt={item.name}
+              className="w-10 h-10 rounded-full object-cover"
+            />
+            <div>
+              <p className="font-semibold text-sm">{item.name}</p>
+              <p className="text-xs text-gray-500">{item.country}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </SwiperSlide>
+  ))}
+</Swiper>
           {/* 👇 Custom Pagination DOM */}
           <div
             ref={paginationRef}

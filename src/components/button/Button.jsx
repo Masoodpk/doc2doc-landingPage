@@ -5,7 +5,7 @@ export default function Button({ className = '', label = 'Contact Us' }) {
   return (
     <button
       className={`
-        inline-flex items-center justify-end gap-5 md:gap-7 text-[#511B4D] text-[12px] md:text-[16px] 
+        inline-flex items-center justify-end gap-3 md:gap-7 text-[#511B4D] text-[12px] md:text-[16px] 
       h-[28px]  md:h-[49px] w-[115px] md:w-[179px] font-semibold
         bg-[#F2B94A] 
         hover:from-orange-500

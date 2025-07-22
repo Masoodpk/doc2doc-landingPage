@@ -13,10 +13,12 @@ function Navbar() {
             className="h-[34px] md:h-[59px] w-[89px] md:w-[161px] object-cover"
           />
         </div>
-        <Button />
+      <a href="tel:9207400300">
+  <Button />
+</a>
       </div>
     </nav>
   );
 }
 
-export default Navbar;
+export default Navbar;  

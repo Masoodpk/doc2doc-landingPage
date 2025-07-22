@@ -13,4 +13,8 @@ export default {
     },
   },
   plugins: [],
+  server: {
+    host: true,
+    allowedHosts: ['.trycloudflare.com'],
+  },
 };

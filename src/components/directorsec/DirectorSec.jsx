@@ -11,7 +11,7 @@ const DirectorsSection = () => {
           <h2 className="anek-malayalam text-[24px] md:text-[60px] lg:text-6xl font-anek-malayalam font-medium bg-gradient-to-r from-[#BA315A] to-[#69378F] bg-clip-text text-transparent mb-4">
             Meet our Directors
           </h2>
-          <p className="text-sm sm:text-base text-global-5 max-w-4xl mx-auto">
+          <p className="text-sm sm:text-base text-[#4D5F7A] max-w-4xl mx-auto">
             Guided by experienced doctors, our directors understand what it takes to succeed in medicine. With their leadership, every step you take is supervised with care, precision, and a deep commitment to your future in healthcare.
           </p>
         </div>

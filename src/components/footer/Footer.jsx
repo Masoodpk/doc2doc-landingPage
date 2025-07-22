@@ -22,7 +22,9 @@ const Footer = () => {
             </div>
 
             <div className="w-full text-center md:text-left lg:w-auto">
-              <Button />
+               <a href="tel:9207400300">
+            <Button />
+          </a>
             </div>
           </div>
 
@@ -45,10 +47,16 @@ const Footer = () => {
                 <div className="flex flex-col gap-3 items-center">
                   <h3 className="text-[14px] font-medium text-white">Connect with Us</h3>
                   <div className="w-[100px] h-[1px] bg-[#E9E3ED] opacity-40"></div>
-                  <div className="flex gap-7">
-                    <img src={Whatsapp} alt="WhatsApp" className="w-[20px] h-[20px]" />
-                    <img src={Instagram} alt="Instagram" className="w-[20px] h-[20px]" />
-                  </div>
+  <div className="flex gap-5">
+  <a href="https://wa.me/+919207400300" target="_blank" rel="noopener noreferrer">
+    <img src={Whatsapp} alt="WhatsApp"  className="w-[20px] h-[20px] cursor-pointer" />
+  </a>
+  <a href="https://instagram.com/_doc2doc_" target="_blank" rel="noopener noreferrer">
+    <img src={Instagram} alt="Instagram" className="w-[20px] h-[20px] cursor-pointer" />
+  </a>
+</div>
+
+
                 </div>
               </div>
               {/* Footer Logo Bottom Center */}
@@ -58,27 +66,31 @@ const Footer = () => {
             {/* Desktop Layout (same as before) */}
             <div className="hidden md:flex w-full justify-between items-start">
               {/* Logo */}
-              <div className="w-[140px] sm:w-[166px]">
-                <img src={Footerlogo} alt="Doc2Doc Logo" className="min-w-[140px]" />
+              <div className="w-[110px] md:w-[140px] lg:w-[160px]">
+                <img src={Footerlogo} alt="Doc2Doc Logo" className="min-w-[110px]" />
               </div>
 
               {/* Contact */}
               <div className="flex flex-col gap-3">
-                <h3 className="text-[24px] md:text-[28px] font-medium text-white anek-malayalam">Contact Us</h3>
+                <h3 className="text-[24px] md:text-[22px] lg:text-[28px] font-medium text-white anek-malayalam">Contact Us</h3>
                 <div className="flex flex-col gap-2">
-                  <div className="w-[100px] sm:w-[138px] h-[1px] bg-[#E9E3ED] opacity-40"></div>
+                  {/* <div className="w-[100px] sm:w-[138px] h-[1px] bg-[#E9E3ED] opacity-40"></div> */}
                   <p className="text-[16px] font-medium text-white">+91 9207 400 300</p>
                 </div>
               </div>
 
               {/* Social */}
               <div className="flex flex-col gap-3">
-                <h3 className="text-[24px] md:text-[28px] font-medium text-white anek-malayalam">Connect with Us</h3>
+                <h3 className="text-[24px] md:text-[22px] lg:text-[28px] font-medium text-white anek-malayalam">Connect with Us</h3>
                 <div className="flex flex-col gap-3">
                   <div className="w-[200px] h-[1px] bg-[#E9E3ED] opacity-40"></div>
-                  <div className="flex gap-8">
-                    <img src={Whatsapp} alt="WhatsApp" className="w-[30px] h-[30px]" />
-                    <img src={Instagram} alt="Instagram" className="w-[30px] h-[30px]" />
+                  <div className="flex md:gap-5 lg:gap-8">
+                    <a href="https://wa.me/+919207400300" target="_blank" rel="noopener noreferrer" >   
+                    <img src={Whatsapp} alt="WhatsApp" className="md:w-[20px] md:h-[20px] lg:w-[30px] lg:h-[30px]" /></a>
+
+                    <a href="https://instagram.com/_doc2doc_" target="_blank" rel="noopener noreferrer">
+                      <img src={Instagram} alt="Instagram" className="md:w-[20px] md:h-[20px] lg:w-[30px] lg:h-[30px]" />
+                    </a>
                   </div>
                 </div>
               </div>

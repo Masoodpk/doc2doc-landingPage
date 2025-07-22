@@ -5,14 +5,14 @@ import Check from "/src/assets/images/check.png";
 
 const MbbsInfoSection = () => {
   return (
-    <section className="bg-[#E9E3ED] py-16 px-[20px] md:px-[64px]">
+    <section className="bg-[#E9E3ED] py-10 md:py-16 px-[20px] md:px-[64px]">
       <div className="container-custom">
         {/* Main Card */}
         <div className="bg-[#F8F7FA] rounded-3xl flex flex-col lg:flex-row justify-center items-center relative shadow-sm px-[30px] md:pr-0 pb-0 pt-[30px] md:pt-[68px]  overflow-hidden">
           <div className="flex flex-col lg:flex-row  items-center gap-8 ">
             {/* Left Text Content */}
             <div className="w-full pb-[30px] md:pb-[68px]  text-center md:text-left">
-              <h2 className="anek-malayalam font-medium text-[22px] md:text-[44px] font-bold mb-4 leading-10 md:leading-[56px]">
+              <h2 className="anek-malayalam font-medium text-[22px] md:text-[44px] mb-4  leading-7 md:leading-[56px]">
                 നിങ്ങളുടെ സമഗ്രമായ <br />
                 <span className="text-[#421b1b]">എംബിബിഎസ് മാർഗ്ഗനിർദ്ദേശം</span>
               </h2>
@@ -32,14 +32,16 @@ const MbbsInfoSection = () => {
                   "Find Budget-Friendly Universities",
                   "Prepare for NEET",
                 ].map((text, index) => (
-                  <div key={index} className="flex  gap-2 text-[20px] text-left text-gray-800">
+                  <div key={index} className="flex  gap-2 text-[16px] md:text-[20px] text-left text-gray-800">
                     <img src={Check} alt="check" className="w-5 h-5 mt-[4px]" />
                     <span>{text}</span>
                   </div>
                 ))}
               </div>
 
-              <Button />
+               <a href="tel:9207400300">
+            <Button className="w-[205] h-[40px]" />
+          </a>
             </div>
  </div>
             {/* Doctor Image */}
